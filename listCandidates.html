@@ -43,7 +43,7 @@
 
       input[type="text"],
       select {
-        width: 30%;
+        width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
         box-sizing: border-box;
@@ -53,7 +53,7 @@
 
       input[type="number"],
       select {
-        width: 30%;
+        width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
         box-sizing: border-box;
@@ -148,9 +148,25 @@
         </form>
     </div>
 
-      <button onclick="voteStatus()">Check Voting Status</button>
-      <p id="status"></p>
-      <p id="time"></p>
+    <div>
+      <p id="votingStatus"></p>
+    </div>
+
+    <div>
+      <button onclick="getAllCandidates()">List of All Candidates</button>
+      <p id="p3"></p>
+    </div>
+
+    <div>
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Candidates Name</th>
+            <th>Candidates Votes</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   </body>
 </html>
