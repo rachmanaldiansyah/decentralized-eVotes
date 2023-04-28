@@ -44,7 +44,7 @@ app.post("/addCandidate", async (req, res) => {
     await tx.wait();
   }
   const bool = await contractInstance.getVotingStatus();
-  if ((bool = true)) {
+  if (bool == true) {
     await storeDataInBlockchain(vote);
     res.send("The candidate has been registered in the smart contract");
   } else {
