@@ -1,4 +1,4 @@
-# Decentralized Election Votes App
+# Decentralized eVotes App
 
 
 To run the code, you need to run the following commands. 
